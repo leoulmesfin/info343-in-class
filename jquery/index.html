@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+    <header class="jumbotron jumbtron-fluid bg-primary text-white">
+        <div class="container">
+            <h1>jQuery Demo</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <button class="btn btn-primary" type="button" name="clicker">Click me!</button>
+        <button class="btn btn-success" type="button" name="alternate">No, click me!!</button>
+        <ul>
+            <li><a href="https://www.w3schools.com/jquery/trysel.asp">jQuery Selectors</a></li>
+            <li><a href="http://www.google.com">Link 2</a></li>
+            <li><a href="http://www.google.com">Link 3</a></li>
+        </ul>
+        <div id="test1" class="card">Test One!</div>
+        <div id="test2" class="card">Test Two!</div>
+        <div id="test3" class="card">Test Three!</div>
+    </main>
+
+    <!-- jQuery library -->
+    <!-- The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking. 
+        This allows browsers to ensure that resources hosted on third-party servers have not been tampered with. 
+        Use of SRI is recommended as a best-practice, whenever libraries are loaded from a third-party source. 
+        Read more at srihash.org -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <!-- our script -->
+    <script src="js/index.js"></script>
+</body>
+</html>

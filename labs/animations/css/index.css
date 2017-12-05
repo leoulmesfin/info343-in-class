@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #BF360C;
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+main div:last-of-type {
+    margin-right: 0;
+}
+
+/* TODO: define the following animations and
+   apply them to the respective box when the
+   user hovers the mouse over the box
+
+Box 1: 2D spin
+Box 2: fade out
+Box 3: drop out (drop to bottom of viewport while fading out)
+Box 4: explode (scale up while fading out)
+Box 5: shake (move side-to-side like shaking head no)
+Box 6: 3D flip
+*/

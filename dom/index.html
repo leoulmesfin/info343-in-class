@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baby Names</title>
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid bg-primary text-white">
+        <div class="container">
+            <h1>🐣 Baby Names</h1>
+            <p class="lead">Explore baby names registered with the Social Security Administration during 2016</p>
+        </div>
+    </header>
+    <main>
+        <section id="filters">
+            <div class="container">
+                <input id="name-filter" type="text" class="form-control" placeholder="filter by name">
+            </div>
+        </section>
+        <section id="data" class="pt-4">
+            <div class="container">
+                <p class="showing">
+                    <button id="prev-page" class="btn btn-outline-primary">◀︎</button>
+                    Showing page <span id="current-page"></span> of <span id="total-pages"></span>
+                    <button id="next-page" class="btn btn-outline-primary">▶︎</button>
+                </p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Sex</th>
+                            <th class="text-right">Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: dynamically generate and add <tr> and <td> elements -->
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="js/babynames_2016.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

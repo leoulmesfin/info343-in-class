@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasks Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <style>
+        .tasks li {
+            cursor: pointer;
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .done::after {
+            content: " ✔️";
+        }
+    </style>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid bg-primary text-white">
+        <div class="container">
+            <h1 class="display-3">☑️ Tasks</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <form action="#" id="new-task-form">
+                    <input type="text" class="form-control" id="new-task-title" placeholder="enter a new task">
+                </form>
+            </section>
+
+            <section class="pt-4">
+                <ul class="tasks">
+                    <!-- TODO: dynamically add <li> elements for each task -->
+                    No tasks yet...
+                </ul>
+
+                <p>
+                    <button id="purge" class="btn btn-primary">Purge Completed</button>
+                </p>
+            </section>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

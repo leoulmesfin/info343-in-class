@@ -1,0 +1,34 @@
+/* these rules apply to _all_ screen sizes */
+body {
+    background-color: #62E8FF; /* background color on small screens */
+    font-size: 16px;                   /* default font size is 16 pixels */
+}
+
+/* no flexbox by default... */
+
+@media (min-width: 768px) {
+    /* these rules apply _only_ to screens 768 pixels and wider */
+
+    body {
+        background-image: url("../img/background.jpg");   /* use background image on larger screens */
+        font-size: 18px;              /* increase font size to 18 pixels on larger screens */
+        color: rgb(255, 255, 255);
+    }
+
+    .mobile-call-icon {
+        display: none;                /* hide mobile call icon */
+    }
+
+    .phone-number {
+        display: inline;              /* show the textual telephone number */
+    }
+
+    /* on screens 768px and wider, make the .row element a flexbox */
+    .row {
+        display: flex;
+    }
+    /* and make the .col elements grow to consume the row width */
+    .col {
+        flex-grow: 1;
+    }
+}

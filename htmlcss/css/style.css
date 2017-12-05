@@ -1,0 +1,33 @@
+/* This is a CSS comment. It starts with the /* and end with */
+
+html {
+    /* This is the font-family style, which allows you to choose specific fonts. 
+    Notice how it falls back to more common fonts if the initial font (far left) is unavailable in the broswer that accesses this page. */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table, th, td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    
+    /* The following CSS style will override the style above, but it comes last. That's a feature of CSS */
+    /* You'll also note that this is a simplified, shorthand version of the above. 
+    It does the same thing, but with less typing overall. 
+    There are lots of shortcuts like this in web programming. 
+    Did you notice that you can do multiline comments this way? */
+    border: 1px dotted blue;
+}
+
+th {
+    border: 1px solid red;
+    font-family: sans-serif;
+}
+
+img {
+    /* Here I am using CSS to modify the size of this image. 
+    This is fine for small changes, but not great 
+    as the browser still has to load the entire image 
+    and then "moosh" it down. Moosh is the technical term. */
+    height: 10rem;
+}

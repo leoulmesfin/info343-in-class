@@ -1,4 +1,4 @@
-# INFO 343-D In-Class Coding Repo
+# INFO 343-C In-Class Coding Repo
 
 Fork this repo into your own account by clicking the **Fork** button in the upper-right of the page. This will create a copy of the repo that is all yours. Clone your forked copy to your development machine (not this original repo) so that you can add code, commit it, and push it back to your forked copy on GitHub.
 
@@ -17,7 +17,7 @@ git config --global user.email your-netid@uw.edu
 Then clone your **forked repo** to your lab machine, and execute these commands **from within the repo directory** to pull the updates:
 
 ```bash
-git remote add upstream https://github.com/info343d-a17/info343-in-class.git
+git remote add upstream https://github.com/info343c-a17/info343-in-class.git
 git pull upstream master
 ```
 
@@ -28,7 +28,7 @@ If you end up in `vim` to confirm a merge message, just hit `Esc` and type `:wq`
 After cloning your **forked repo** for the first time, execute this command only once **from within the repo directory** to setup the upstream remote:
 
 ```bash
-git remote add upstream https://github.com/info343d-a17/info343-in-class.git
+git remote add upstream https://github.com/info343c-a17/info343-in-class.git
 ```
 
 When I ask you to pull updates, execute this command **from within the repo directory**:

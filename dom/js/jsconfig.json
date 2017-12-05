@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ES6"
+    },
+    "exclude": [
+        "node_modules",
+        "babynames_2016.js"
+    ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid bg-dark text-white">
+        <div class="container">
+            <h1>Pokemon!</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="alert alert-danger d-none" id="error-alert"></div>
+            <div class=text-center>
+                <h2>
+                    <span id="name"></span>
+                </h2>
+                <img src="" alt="" id="pokemon-pic">
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-4">
+                    <h3>Types</h3>
+                    <p id="types" class="lead"></p>
+                </div>
+                <div class="col-4">
+                    <h3>Moves</h3>
+                    <p id="moves" class="lead"></p>
+                </div>
+                <div class="col-4">
+                    <h3>Appears In</h3>
+                    <p id="games" class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- fetch() API polyfill -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <!-- our script -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

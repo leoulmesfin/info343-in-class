@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <style>
+        #results img {
+            margin-right: 16px;
+            margin-bottom: 16px;
+            cursor: pointer;
+        }
+        .progress-bar {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid bg-dark text-light">
+        <div class="container">
+            <h1>iTunes</h1>
+            <p>Search for content on iTunes</p>
+        </div>
+    </header>
+    <main>
+        <section class="pb-4">
+            <div class="container">
+                <form action="#" id="search-form">
+                    <input type="text" class="form-control" placeholder="what do you want to listen to?">
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="progress d-none">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated"></div>                        
+                </div>
+                <div id="results"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

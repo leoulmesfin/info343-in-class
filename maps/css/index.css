@@ -1,0 +1,26 @@
+/* remove any margins and padding from the html/body elements */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* make the map consume the entire viewport area */
+#map {
+    width: 100%;
+    height: 100vh;
+}
+/* used to mark the user's current location */
+.current-location-marker {
+    background-color: #55F;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+    width: 1rem;
+    height: 1rem;
+}
+/* used to mark the locations of data records */
+.data-marker {
+    background-color: #F55;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+    width: 1rem;
+    height: 1rem;
+}
